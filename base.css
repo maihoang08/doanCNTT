@@ -1,0 +1,228 @@
+:root{
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+    --primary-color:#D24902;
+    --hover-color: #a31806;
+}
+
+*{
+    box-sizing: inherit;  /* kế thừa thẻ chứ nó */
+}
+html{
+    font-style: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    background-color: #FBC992;
+}
+/* Responsive */
+.grid{
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.grid__full-width{
+    width: 100%;
+}
+.grid__row{
+    display: flex;
+    flex-wrap: wrap;
+   
+    margin-right: -8px;
+}
+
+/* test */
+.grid__colunm-2{
+    padding-left: 8x;
+    padding-right: 15px;
+    width: 16.6667%;
+}
+.grid__column-2-4{
+    /* padding-left: 8px; */
+    padding-right: 8px;
+    width: 25%;
+    display: flex;
+}
+.grid__colunm-10{
+    padding-left: 8px;
+    padding-right: 8px;
+    width: 83.3333%;
+}
+/* Modal */
+.modal{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+}
+.modal__overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4 ) ;
+}
+.modal__body{
+    background: var(--white-color);
+    margin: auto;
+    position: relative;
+    border-radius: 3px;
+}
+/* button */
+.btn   {
+    min-width: 124px;
+    height: 36px;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+    cursor: pointer;
+    background-color: var(--white-color);
+}
+.btn.btn--primary{
+    color: var(--white-color);
+    background: var(--primary-color);
+    
+}
+.btn.btn--disabled{
+    cursor:default;
+    background: #999;
+}
+/* user */
+.fa-user{
+    padding-left: 0 30px;
+}
+/* Selection */
+/*.select-input{
+    min-width: 120px;
+    height: 34px;
+    padding: 0 12px;
+    border-radius: 2px;
+    background-color: var(--white-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.select-input__label{
+    font-size: 1rem;
+} 
+.select-input__list{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 25px;
+    border-radius: 2px;
+    background-color:var(--white-color);
+    padding: 8px;
+    list-style: none;
+}
+*/
+/* web banner  */
+
+/* CSS RESET */
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+/* CSS RESET */
+
+.carousel-container{
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.carousel-slide{
+  display: flex;
+  width: 100%;
+}
+.carousel-slide__image{
+  width: 100vw;
+}
+.dots{
+  display: flex;
+  position: relative;
+  width: 60%;
+  margin: auto;
+  bottom: 40px;
+  justify-content: center;
+}
+.dot{
+  margin: 0 1rem;
+  border-radius: 50%;
+  height: 15px;
+  width: 15px;
+  background-color: rgba(200,200,200,0.3);
+}
+
+.active{
+  background-color: rgba(0,0,0,0.8)
+}
