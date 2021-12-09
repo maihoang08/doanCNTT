@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bún đậu 3AE</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+</head>
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="grid">
+                <nav class="header__navbar">
+                    <!-- logo -->
+                    <ul class="header__navbar-list">
+                        <li class="header_navbar-item header_navbar-logo ">
+                            <a href="/" class="header__logo-link">
+                                <img style="height: 40px;width: 40px;" src="./assets/img/bundau/3AE (1).png" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- menu -->
+                    <ul class="header__navbar ">
+
+                        <li class="header__navbar-item">
+                            <a href="thucdon.html" class="header__navbar-item-link tdkmvct">Thực đơn</a>
+                        </li>
+                        <!-- <li class="header__navbar-item">
+                            <a href="" class="header__navbar-item-link tdkmvct">Khuyến mãi</a>
+                        </li> -->
+                        <li class="header__navbar-item">
+                            <a href="gioithieu.html" class="header__navbar-item-link tdkmvct">Giới thiệu</a>
+                        </li>
+
+                    </ul>
+                    <!-- user & cart -->
+                    <ul n class="header__navbar">
+                        <!-- user -->
+                        <li class="header__navbar-item header__navbar-user ">
+                            <div class="header__user-wrap">
+                                <i class="header__cart-icon icon far fa-user"></i>
+                                <span class=" header__navbar-user-name">
+                                    <a href="dangnhap.html">User</a>
+                                </span>
+                                
+                            </div>
+                            
+                        </li>
+                        <!-- giỏ hàng -->
+                        <li class="header__navbar-item">
+                            <!-- Cart layout -->
+                            <div class="header__cart">
+                                <div class="header__cart-wrap">
+                                    <i class="header__cart-icon icon fas fa-shopping-cart"></i>
+                                    <span class="header__cart-notice">8</span>
+                                    <!-- No cart: header__cart-list--no-cart -->
+                                    <div class="header__cart-list  ">
+                                        <img src="./assets/img/giohangtrong.png" alt="" class="header__cart-no-cart-img">
+                                        <h4 class="header__cart-heading">Sản phẩm đã thêm</h4>
+                                        <ul class="header__cart-list-item">
+                                             <li class="header__cart-item">
+                                                <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fthudaumot.edu.vn%2Fmeo-anh-long-ngan%2F&psig=AOvVaw1W4yXQmOuaUhJBmr-F9C7o&ust=1638884392763000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCICavqamz_QCFQAAAAAdAAAAABAP" alt="" class="header__cart-img">
+                                                <div class="header__cart-item-info">
+                                                    <div class="header__cart-item-head">
+                                                        <h5 class="header__cart-item-name">Combo bún đậu tá lả 2 người + 2 Trà tắc</h5>
+                                                        <div class="header__cart-item-price-wrap">
+                                                            <span class="header__cart-item-price">100.000đ </span>
+                                                            <span class="span header__cart-item-multipl">x</span>
+                                                            <span class="header__cart-item-qnt">1</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="header__cart-item-body">
+                                                        <span class="header__cart-item-remove">Xóa</span>
+                                                    </div>
+                                                </div>
+                                            </li> 
+
+                                        </ul>
+
+                                    <a class="header__cart-view-cart btn btn-primary">Đặt hàng</a>
+                                </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+
+                </nav>
+            </div>
+        </header>
+        <div class="grid">
+            <div class="grid__row app__content">
+                <div class="grid__colunm-2">
+                        <nav class="category">
+                            <h3 class="category__heading">
+                                <i class="category__heading-icon fas fa-list-ul"></i>
+                                Danh mục
+                            </h3>
+            
+                            <ul class="category-list">
+                                <li class="category-item category-item--active">
+                                    <a href="" class="category-item__link">Bún đậu</a>
+                                </li>
+                                <li class="category-item category-item--active">
+                                    <a href="" class="category-item__link">Nước uống</a>
+                                </li>
+                                <li class="category-item category-item--active">
+                                    <a href="" class="category-item__link">Đồ ăn thêm</a>
+                                </li>
+                            </ul>
+                        </nav>
+                </div>
+    
+                <div class="grid__column-10">
+                        <div class="home-filter">
+                            <span class="home-filter__label">Sắp xếp theo</span>
+                            <button class="home-filter__btn btn btn--primary">Combo</button>
+                            <button class="home-filter__btn btn ">Giá thấp</button>
+                            <button class="home-filter__btn btn">Giá cao</button>
+                        </div>
+
+                        <div class="home-product">
+                            <div class="grid__row"> 
+                                <div class="grid__column-2-4">
+                                    <!-- Product item -->
+                                    <div class="home-product-item">
+                                        <div class="home-product-item__img ">
+                                            <img class="home-product-item__imgimg" src="https://images.foody.vn/res/g66/656442/s400x400/96d0e857-42bc-4c9c-9082-d73a5f80ae3e.jpg" alt="">
+                                        </div>
+                                        <h4 class="home-product-item__name">Combo bún đậu tá lả 2 người + 2 Trà tắc</h4>
+                                        <p class="home-product-item__description">Phần 2 ngưởi ăn gồm : Bún + đậu hủ + thịt + chả cốm + nem chua rán + 2 trà tắc</p>
+                                        <div class="home-product-item__price-row">
+                                            <span class="home-product-item__price">170.000đ</span>
+                                            <span class="btn-adding ">+</span> 
+
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                
+                                <div class="grid__column-2-4">
+                                    <div class="home-product-item">
+                                        <div class="home-product-item__img ">
+                                            <img class="home-product-item__imgimg" src="https://images.foody.vn/res/g66/656442/s400x400/8dde8f18-7df6-499c-82b1-c7bbbf24a46e.jpg" alt="">
+                                        </div>
+                                        <h4 class="home-product-item__name">Combo bún đậu mẹt tre 2 người + 2 Trà tắc</h4>
+                                        <p class="home-product-item__description">Phần 2 người ăn gồm: bún, đậu hủ, thịt chân giò, nem chua rán, chả cốm, dồi sụn + 2 trà tắc  </p>
+                                        <div class="home-product-item__price-row">
+                                            <span class="home-product-item__price">199.000đ</span>
+                                            <span class="btn-adding ">+</span> 
+
+                                        </div>
+                                        
+                                    </div>
+                                </div>   
+
+                                <div class="grid__column-2-4">
+                                    <div class="home-product-item">
+                                        <div class="home-product-item__img ">
+                                            <img class="home-product-item__imgimg" src="https://images.foody.vn/res/g66/656442/s400x400/e39c39a3-4a61-4434-a91a-d40ae0e45324.jpg" alt="">
+                                        </div>
+                                        <h4 class="home-product-item__name">Combo bún đậu Mẹt Tre 4 người + 4 Trà tắc</h4>
+                                        <p class="home-product-item__description">Phần 4 người ăn: bún, đậu, thịt bắp giò, nem chua rán, chả cốm, dồi sụn + 4 ly trà tăcs</p>
+                                        <div class="home-product-item__price-row">
+                                            <span class="home-product-item__price">380.000đ</span>
+                                            <span class="btn-adding ">+</span> 
+
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                    
+                                <div class="grid__column-2-4">
+                                    <div class="home-product-item">
+                                        <div class="home-product-item__img ">
+                                            <img class="home-product-item__imgimg" src="https://images.foody.vn/res/g66/656442/s400x400/d908f550-fd36-493a-a777-b419f7f96e66.jpg" alt="">
+                                        </div>
+                                        <h4 class="home-product-item__name">Bún đậu tá lả</h4>
+                                        <p class="home-product-item__description">Gồm: Bún + đậu hủ + thịt + chả cốm + nem chua rán</p>
+                                        <div class="home-product-item__price-row">
+                                            <span class="home-product-item__price">74.000đ</span>
+                                            <span class="btn-adding ">+</span> 
+
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+
+                                <div class="grid__column-2-4">
+                                    <div class="home-product-item">
+                                        <div class="home-product-item__img ">
+                                            <img class="home-product-item__imgimg" src="https://images.foody.vn/res/g66/656442/s400x400/d908f550-fd36-493a-a777-b419f7f96e66.jpg" alt="">
+                                        </div>
+                                        <h4 class="home-product-item__name">Bún đậu tá lả + Trà tắc</h4>
+                                        <p class="home-product-item__description">Gồm: Bún + đậu hủ + thịt + chả cốm + nem chua rán + trà tắt</p>
+                                        <div class="home-product-item__price-row">
+                                            <span class="home-product-item__price">80.000đ</span>
+                                            <span class="btn-adding ">+</span> 
+
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+
+                                <div class="grid__column-2-4">
+                                    <div class="home-product-item">
+                                        <div class="home-product-item__img ">
+                                            <img class="home-product-item__imgimg" src="https://images.foody.vn/res/g66/656442/s400x400/3bd2a79f-d64c-478a-9b55-5feb7d1a3d67.jpg" alt="">
+                                        </div>
+                                        <h4 class="home-product-item__name">Bún đậu Mẹt Tre</h4>
+                                        <p class="home-product-item__description">Bún, đậu hủ, thịt chân giò, nem chua rán, chả cốm, dồi sụn</p>
+                                        <div class="home-product-item__price-row">
+                                            <span class="home-product-item__price">89.000đ</span>
+                                            <span class="btn-adding ">+</span> 
+
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+
+                                <div class="grid__column-2-4">
+                                    <div class="home-product-item">
+                                        <div class="home-product-item__img ">
+                                            <img class="home-product-item__imgimg" src="https://images.foody.vn/res/g66/656442/s400x400/f0174c6c-a69c-427c-b83c-e7fe836c9633.jpg" alt="">
+                                        </div>
+                                        <h4 class="home-product-item__name">Bún lá thêm</h4>
+                                        <p class="home-product-item__description"></p>
+                                        <div class="home-product-item__price-row">
+                                            <span class="home-product-item__price">15.000đ</span>
+                                            <span class="btn-adding ">+</span> 
+
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+
+                                <div class="grid__column-2-4">
+                                    <div class="home-product-item">
+                                        <div class="home-product-item__img ">
+                                            <img class="home-product-item__imgimg" src="https://images.foody.vn/res/g66/656442/s400x400/96d0e857-42bc-4c9c-9082-d73a5f80ae3e.jpg" alt="">
+                                        </div>
+                                        <h4 class="home-product-item__name">Chả cốm thêm</h4>
+                                        <p class="home-product-item__description"></p>
+                                        <div class="home-product-item__price-row">
+                                            <span class="home-product-item__price">35.000đ</span>
+                                            <span class="btn-adding ">+</span> 
+
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+
+                                <div class="grid__column-2-4">
+                                    <div class="home-product-item">
+                                        <div class="home-product-item__img ">
+                                            <img class="home-product-item__imgimg" src="https://images.foody.vn/res/g66/656442/s400x400/cdb4eaa4-6752-4ce5-85ca-48398bae4696.jpg" alt="">
+                                        </div>
+                                        <h4 class="home-product-item__name">Đậu hủ thêm</h4>
+                                        <p class="home-product-item__description"></p>
+                                        <div class="home-product-item__price-row">
+                                            <span class="home-product-item__price">15.000đ</span>
+                                            <span class="btn-adding ">+</span> 
+
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+
+                                <div class="grid__column-2-4">
+                                    <div class="home-product-item">
+                                        <div class="home-product-item__img ">
+                                            <img class="home-product-item__imgimg" src="https://images.foody.vn/res/g66/656442/s400x400/39a1f18b-ad7f-47a9-b822-4db3b09f84df.jpg" alt="">
+                                        </div>
+                                        <h4 class="home-product-item__name">Nem chua rán thêm</h4>
+                                        <p class="home-product-item__description"></p>
+                                        <div class="home-product-item__price-row">
+                                            <span class="home-product-item__price">35.000đ</span>
+                                            <span class="btn-adding ">+</span> 
+
+                                        </div>         
+                                    </div>
+                                </div>
+
+                                <div class="grid__column-2-4">
+                                    <div class="home-product-item">
+                                        <div class="home-product-item__img ">
+                                            <img class="home-product-item__imgimg" src="https://images.foody.vn/res/g66/656442/s400x400/9a51abb7-06ee-465b-a1e9-b5a96fa08d06.jpg" alt="">
+                                        </div>
+                                        <h4 class="home-product-item__name">Thịt chân giò thêm</h4>
+                                        <p class="home-product-item__description"></p>
+                                        <div class="home-product-item__price-row">
+                                            <span class="home-product-item__price">35.000đ</span>
+                                            <span class="btn-adding ">+</span> 
+
+                                        </div>    
+                                    </div>
+                                </div>
+
+                                <div class="grid__column-2-4">
+                                    <div class="home-product-item">
+                                        <div class="home-product-item__img ">
+                                            <img class="home-product-item__imgimg" src="https://images.foody.vn/res/g66/656442/s400x400/e917f088-f9cf-4744-8d88-18b224c36621.jpg" alt="">
+                                        </div>
+                                        <h4 class="home-product-item__name">Lòng non chiên thêm</h4>
+                                        <p class="home-product-item__description"></p>
+                                        <div class="home-product-item__price-row">
+                                            <span class="home-product-item__price">35.000đ</span>
+                                            <span class="btn-adding ">+</span> 
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="grid__column-2-4">
+                                    <div class="home-product-item">
+                                        <div class="home-product-item__img ">
+                                            <img class="home-product-item__imgimg" src="https://images.foody.vn/res/g66/656442/s400x400/eec071e0-23f2-4e36-8943-97b873023b2b.jpg" alt="">
+                                        </div>
+                                        <h4 class="home-product-item__name">Bánh tráng thêm</h4>
+                                        <p class="home-product-item__description"></p>
+                                        <div class="home-product-item__price-row">
+                                            <span class="home-product-item__price">5.000đ</span>
+                                            <span class="btn-adding ">+</span> 
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="grid__column-2-4">
+                                    <div class="home-product-item">
+                                        <div class="home-product-item__img ">
+                                            <img class="home-product-item__imgimg" src="https://images.foody.vn/res/g66/656442/s400x400/87719d02-32b2-4ece-9206-bdbd0b80a35c.jpg" alt="">
+                                        </div>
+                                        <h4 class="home-product-item__name">Dồi sụn thêm</h4>
+                                        <p class="home-product-item__description"></p>
+                                        <div class="home-product-item__price-row">
+                                            <span class="home-product-item__price">45.000đ</span>
+                                            <span class="btn-adding ">+</span> 
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="grid__column-2-4">
+                                    <div class="home-product-item">
+                                        <div class="home-product-item__img ">
+                                            <img class="home-product-item__imgimg" src="https://images.foody.vn/res/g66/656442/s400x400/8513bdf0-8b3d-4590-9a40-aa2f198f9ca7.jpg" alt="">
+                                        </div>
+                                        <h4 class="home-product-item__name">Trà tắt thêm</h4>
+                                        <p class="home-product-item__description"></p>
+                                        <div class="home-product-item__price-row">
+                                            <span class="home-product-item__price">15.000đ</span>
+                                            <span class="btn-adding ">+</span> 
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="grid__column-2-4">
+                                    <div class="home-product-item">
+                                        <div class="home-product-item__img ">
+                                            <img class="home-product-item__imgimg" src="https://images.foody.vn/res/g67/663224/s400x400/75fbd447-a12f-4622-a79a-1cafe0a8-add1a983-210419171443.jpeg" alt="">
+                                        </div>
+                                        <h4 class="home-product-item__name">Chanh dây</h4>
+                                        <p class="home-product-item__description"></p>
+                                        <div class="home-product-item__price-row">
+                                            <span class="home-product-item__price">15.000đ</span>
+                                            <span class="btn-adding ">+</span> 
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="grid__column-2-4">
+                                    <div class="home-product-item">
+                                        <div class="home-product-item__img ">
+                                            <img class="home-product-item__imgimg" src="https://images.foody.vn/res/g67/663224/s400x400/75fbd447-a12f-4622-a79a-1cafe0a8-add1a983-210419171443.jpeg" alt="">
+                                        </div>
+                                        <h4 class="home-product-item__name">Nước sấu</h4>
+                                        <p class="home-product-item__description"></p>
+                                        <div class="home-product-item__price-row">
+                                            <span class="home-product-item__price">15.000đ</span>
+                                            <span class="btn-adding ">+</span> 
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="grid__column-2-4">
+                                    <div class="home-product-item">
+                                        <div class="home-product-item__img ">
+                                            <img class="home-product-item__imgimg" src="https://images.foody.vn/res/g67/663224/s400x400/981e7224-dc5c-4ec8-8ba1-916cd6ff-59628c24-210419171214.jpeg" alt="">
+                                        </div>
+                                        <h4 class="home-product-item__name">Coca</h4>
+                                        <p class="home-product-item__description"></p>
+                                        <div class="home-product-item__price-row">
+                                            <span class="home-product-item__price">15.000đ</span>
+                                            <span class="btn-adding ">+</span> 
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="grid__column-2-4">
+                                    <div class="home-product-item">
+                                        <div class="home-product-item__img ">
+                                            <img class="home-product-item__imgimg" src="https://images.foody.vn/res/g67/663224/s400x400/9267e47f-ac28-44df-8aca-2b811179-392b7fb6-210427120958.jpeg" alt="">
+                                        </div>
+                                        <h4 class="home-product-item__name">Atiso đỏ</h4>
+                                        <p class="home-product-item__description">Uống mát</p>
+                                        <div class="home-product-item__price-row">
+                                            <span class="home-product-item__price">15.000đ</span>
+                                            <span class="btn-adding ">+</span> 
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                   
+
+                                
+
+                                
+                                        
+                                
+
+                            </div>          
+                        </div> 
+                </div> 
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+
+        <foodter class="foodter">
+            <ul class="foodter__chung gioithieu">
+                <a href="">Giới thiệu</a>
+                <img style="height: 50px;width: 50px;" src="./assets/img/bundau/3AE (1).png" alt="">
+            </ul>
+            <ul class="foodter__chung lienhe"> Liên hệ
+                <li>
+                    <a href="">
+                        <i style="color: #1b74e4;" class="fab fa-facebook"></i> Facebook
+                        
+                    </a>
+                </li>
+                <li>
+                   <i style="color: white;" class="fa fa-phone fa-1x"></i> 19110269
+                </li>
+            </ul>
+            <ul style="padding-right: 40px;" class="foodter__chung dieukhoanchinhsach">
+                <a href="">Điều khoản và chính sách</a>
+            </ul>
+
+        </foodter>
+
+    </div>
+
+    <!-- Modal layout-->
+    <!-- <div class="modal">
+        <div class="modal__overlay"></div>
+
+        <div class="modal__body"> -->
+            <!-- Register form -->
+            <!-- <div class="auth-form">
+                <div class="auth-form__header">
+                    <span class="auth-form__switch-btn">Trở lại</span>
+                    <h3 class="auth-form__heading">Đăng ký</h3>
+                    <span class="auth-form__switch-btn">Đăng nhập</span>
+                    
+                </div>
+                <div class="auth-form__form">
+                    <div class="auth-form__group">
+                        <input type="text" class="auth-form__input" placeholder="Nhập tên">
+                    </div>
+                    <div class="auth-form__group">
+                        <input type="email" class="auth-form__input" placeholder="Nhập email">
+                    </div>
+                    <div class="auth-form__group">
+                        <input type="password" class="auth-form__input" placeholder="Nhập mật khẩu">
+                    </div>
+                    <div class="auth-form__group">
+                        <input type="password" class="auth-form__input" placeholder="Nhập lại mật khẩu">
+                    </div>
+                    <div class="auth-form__group">
+                        <input type="text" class="auth-form__input" placeholder="Nhập số điện thoại">
+                    </div>
+                    <div class="auth-form__controls">
+                        <button class="btn btn--primary">ĐĂNG KÝ</button>
+                    </div>
+                </div>
+            </div> -->
+
+            <!-- Login form -->
+            <!-- <div class="auth-form">
+                <div class="auth-form__header">
+                    <span class="auth-form__switch-btn">Trở lại</span>
+                    <h3 class="auth-form__heading">Đăng nhập</h3>
+                    <span class="auth-form__switch-btn">Đăng ký</span>
+                    
+                </div>
+                <div class="auth-form__form">
+                    <div class="auth-form__group">
+                        <input type="email" class="auth-form__input" placeholder="Nhập địa chỉ email">
+                    </div>
+                    <div class="auth-form__group">
+                        <input type="password" class="auth-form__input" placeholder="Nhập mật khẩu">
+                    </div>
+                    <div class="auth-form__aside">
+                        <div class="auth-form__help">
+                            <a href="" class="auth-form__help-link">Quên mật khẩu</a>
+                        </div>
+                    </div>
+                    <div class="auth-form__controls">
+                        <button class="btn btn--primary">ĐĂNG NHẬP</button>
+                    </div>
+                </div>
+            </div> -->
+            
+    
+        </div>
+    </div>
+</body>
+</html>
